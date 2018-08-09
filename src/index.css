@@ -57,10 +57,7 @@ body {
   text-indent: -9999em;
   margin: 88px auto;
   position: relative;
-
-  /* TO REMOVE */
   top: 25vh;
-
   font-size: 11px;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);

@@ -9,11 +9,21 @@ const passwordLength = length({ min: 8, max: 72 });
 const matchesPassword = matches('password');
 
 export const RegisterFormSecondPage = props => {
-	const { handleSubmit, previousPage } = props;
+	const { handleSubmit, previousPage, loading } = props;
+
+	let loader;
+	if (loading){
+		loader = (
+			<div className="loader-wrapper">
+				<div className="loader">Loading...</div>
+			</div>
+		);
+	}
+
 	let error;
 	if (props.error) {
 		error = (
-			<div className="form-error" aria-live="polite">
+			<div className="form-field-error" aria-live="polite">
 				{props.error}
 			</div>
 		);
@@ -21,7 +31,7 @@ export const RegisterFormSecondPage = props => {
 
 	return (
 		<form onSubmit={handleSubmit}>
-			{error}
+			{loader}
 			<fieldset>
 				<legend>Registration</legend>
 					<Field

@@ -162,16 +162,16 @@ fieldset, legend {
     /*box-sizing: border-box;*/
     color: #ffffff;
     text-align: center;
-    background: rgba(11, 14, 25, 0.8);
+    background: rgba(11, 14, 25, 0.9);
     padding: 5%;
     border-top: 1px solid;
     min-width: 280px;
     max-width: 360px;
-    border-image: linear-gradient(to right,rgba(11, 14, 25, 0.8) 25%, rgba(11, 14, 25, 1) 25%, #03A9F4 50%, #03A9F4 50%, rgba(11, 14, 25, 1) 75%, rgba(11, 14, 25, 0.8) 75%) 5;
+    border-image: linear-gradient(to right,rgba(11, 14, 25, 0.9) 25%, rgba(11, 14, 25, 1) 25%, #03A9F4 50%, #03A9F4 50%, rgba(11, 14, 25, 1) 75%, rgba(11, 14, 25, 0.9) 75%) 5;
 }
 
 .login-form-wrapper legend {
-    color: rgba(11, 14, 25, 0.8);
+    color: rgba(11, 14, 25, 0.9);
 }
 
 .login-form-wrapper input {
@@ -240,7 +240,7 @@ fieldset, legend {
 }
 
 .previous:hover,
-.pervious:focus {
+.previous:focus {
     text-decoration: underline;
 }
 

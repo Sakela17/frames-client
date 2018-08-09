@@ -17,14 +17,17 @@ export class RegisterForm extends React.Component {
   }
 
   nextPage = () => {
+    console.log('next page');
     this.setState({ page: this.state.page + 1 });
   };
 
   previousPage = () => {
+    console.log('previous page');
     this.setState({ page: this.state.page - 1 });
   };
 
   handleCreateUser = values => {
+    console.log('handleCreateUser');
 	const {username, email, companyName, password, phoneNumber} = values;
 
     const user = {
@@ -56,6 +59,7 @@ export class RegisterForm extends React.Component {
         <RegisterFormSecondPage
           previousPage={this.previousPage}
           onSubmit={this.handleCreateUser}
+          loading={this.props.loading}
         />
         }
         <p
@@ -69,7 +73,8 @@ export class RegisterForm extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  loggedIn: state.auth.user !== null
+  loggedIn: state.auth.user !== null,
+  loading: state.auth.loading
 });
 
 export default connect(mapStateToProps)(RegisterForm);

@@ -77,7 +77,6 @@ LoginForm = reduxForm({
 export default LoginForm = connect(state => {
 	return {
 		loggedIn: state.auth.user !== null,
-		loading: state.auth.loading,
 		user: state.auth.user
 	};
 })(LoginForm);
