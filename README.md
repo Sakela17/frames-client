@@ -6,9 +6,9 @@ Frames steps in to take out the leg work. Users can easily add, assign, edit and
 maintain a list of employees and contact information and keep their schedules straight in daily, 
 weekly or monthly views.
 
-Live app can be viewed [here](http://frames.surge.sh).
+Live app can be viewed [here](http://frames-app.surge.sh).
 
-Check out the server repo [here](https://github.com/thinkful-ei20/frames-server).
+Check out the server repo [here](https://github.com/valsakel/frames-server).
 
 **Demo account for testing:**  
 username: **username**  
