@@ -1,4 +1,4 @@
-<img src="src/images/Logo-2.png" alt="app log" width="4%"> [Frames](http://frames.surge.sh) - staff scheduling app
+<img src="src/images/Logo-2.png" alt="app log" width="4%"> [Frames](https://frames-app.surge.sh) - staff scheduling app
 ============================
 Mobile-friendly, intuitive, and easy to use staff scheduling application for small businesses. 
 When scheduling for multiple shifts, multiple employees over multiple divergent time zones, 
@@ -6,7 +6,7 @@ Frames steps in to take out the leg work. Users can easily add, assign, edit and
 maintain a list of employees and contact information and keep their schedules straight in daily, 
 weekly or monthly views.
 
-Live app can be viewed [here](http://frames-app.surge.sh).
+Live app can be viewed [here](https://frames-app.surge.sh).
 
 Check out the server repo [here](https://github.com/valsakel/frames-server).
 
