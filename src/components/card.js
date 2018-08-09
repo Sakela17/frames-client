@@ -12,14 +12,6 @@ export const Card = (props) => {
 	const { frame } = props;
 	const { employeeId, startFrame, endFrame, id } = frame;
 	const emplName = (employeeId !== null) ? `${employeeId.firstname} ${employeeId.lastname}` : 'OPEN';
-	// let img = placeholder;
-	//check that employee has loaded
-	// THEN check that img is defined
-	// if(frame.employeeId){
-	// 	if(frame.employeeId.img){
-	// 		img = frame.employeeId.img;
-	// 	}
-	// }
 
 	// format the moments to be just times
 	const start = moment(startFrame).format('LT');
