@@ -4,6 +4,8 @@ import {showModal} from '../actions/modals';
 import PropTypes from 'prop-types';
 import { formatTwelveHourTime } from '../actions/utils';
 
+import placeholderImg from '../images/placeholder_person.jpg';
+
 export function EmployeeCard (props){
 
 	//Format availability
@@ -42,7 +44,11 @@ export function EmployeeCard (props){
 		<div className="employee-card">
 			<div className="employee-profile">
 				<div className="employee-profile-info">
-          <div className="employee-img"><img className="contain" src={props.img} alt={props.name}/></div>
+          <div className="employee-img">
+						<img
+							className="contain"
+							src={props.img ? props.img : placeholderImg}
+							alt={props.img ? props.name : "placeholder image"}/></div>
 					<div className="employee-data">
             <p>{props.name}</p>
 						<p>{props.email}</p>
@@ -59,8 +65,6 @@ export function EmployeeCard (props){
         <h3>Availability</h3>
 				{availabilityTable}
 			</div>
-
-
 		</div>
 	);
 }

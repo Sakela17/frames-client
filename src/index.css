@@ -58,7 +58,7 @@ body {
   margin: 88px auto;
   position: relative;
   top: 25vh;
-  font-size: 11px;
+  font-size: calc(0.5rem + 0.3vw);
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);

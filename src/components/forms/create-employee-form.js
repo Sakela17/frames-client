@@ -42,7 +42,7 @@ export class CreateEmployeeForm extends React.Component {
 	render(){
 		let error;
 
-		if(this.props.error) {
+		if (this.props.error) {
 			error = (
 				<div className="form-modal-error" aria-live="polite">
 					{this.props.error}
