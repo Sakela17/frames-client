@@ -7,8 +7,10 @@
     }
 }
 
-fieldset {
+fieldset, legend {
     border: none;
+    margin: 0;
+    padding: 0;
 }
 
 .form-wrapper {
@@ -68,13 +70,15 @@ fieldset {
 }
 
 .form-submit-btn {
+    width: 40%;
 	border-radius: 2px;
     background: #03A9F4;
-    padding: 10px 40px;
+    padding: 2.5% 5%;
     border: 2px solid #03A9F4;
-    color: black;
+    color: #13262e;
     text-transform: uppercase;
-	font-size: 12px;
+    font-size: calc(0.6rem + 0.3vw);
+    font-weight: bold;
 	transition-property: background,color;
     transition-duration: .2s;
     letter-spacing: 1px;
@@ -155,11 +159,13 @@ fieldset {
 /* LOGIN FORM */
 
 .login-form-wrapper {
+    /*box-sizing: border-box;*/
     color: #ffffff;
     text-align: center;
     background: rgba(11, 14, 25, 0.8);
     padding: 5%;
     border-top: 1px solid;
+    min-width: 280px;
     max-width: 360px;
     border-image: linear-gradient(to right,rgba(11, 14, 25, 0.8) 25%, rgba(11, 14, 25, 1) 25%, #03A9F4 50%, #03A9F4 50%, rgba(11, 14, 25, 1) 75%, rgba(11, 14, 25, 0.8) 75%) 5;
 }
@@ -201,36 +207,43 @@ fieldset {
 /* ========================================================================================================= */
 /* REGISTRATION FORM */
 .register-form-wrapper {
+    /*box-sizing: border-box;*/
+
     color: #ffffff;
+    min-width: 300px;
 }
 
 .register-form-wrapper input { 
-    border: 0.5px solid #35df5c !important;
-    border-left: 2px solid #35df5c !important;
+    border: 0.5px solid #1f9139;
+    border-left: 2px solid #28bb49;
 }
 
 .next {
-    border: 2px solid #35df5c;
-    color: black;
-    background: #35df5c;
+    border-color: #28bb49;
+    background: #28bb49;
 }
 
-.next:hover{
-    color: #35df5c;
+.next:hover,
+.next:focus {
+    color: #28bb49;
 }
 
 .ask-login a {
-    color: #35df5c;
+    color: #28bb49;
 }
 
 .previous {
     border: none;
-    border-bottom: 1px solid #35df5c;
     background: none;
     display: block;
-    color: #35df5c;
-    margin: 10px auto;
+    color: #28bb49;
 }
+
+.previous:hover,
+.pervious:focus {
+    text-decoration: underline;
+}
+
 
 .previous:hover {
     cursor: pointer;

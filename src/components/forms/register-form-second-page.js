@@ -9,7 +9,7 @@ const passwordLength = length({ min: 8, max: 72 });
 const matchesPassword = matches('password');
 
 export const RegisterFormSecondPage = props => {
-	const { handleSubmit, pristine, previousPage, submitting } = props;
+	const { handleSubmit, previousPage } = props;
 	let error;
 	if (props.error) {
 		error = (
@@ -20,32 +20,28 @@ export const RegisterFormSecondPage = props => {
 	}
 
 	return (
-
 		<form onSubmit={handleSubmit}>
 			{error}
 			<fieldset>
 				<legend>Registration</legend>
-				<label>Email
 					<Field
 						name="email"
 						label="Email"
 						type="email"
 						component={renderField}
 						validate={[required, validEmail]}
+						placeholder="user@gmail.com"
 						autocomplete="off"
 					/>
-				</label>
-				<label>Password
 					<Field
 						name="password"
 						label="Password"
 						type="password"
 						component={renderField}
 						validate={[required, isTrimmed, passwordLength]}
+						placeholder="password"
 						autocomplete="off"
 					/>
-				</label>
-				<label>Confirm password
 					<Field
 						name="passwordConfirm"
 						label="Confirm password"
@@ -54,24 +50,26 @@ export const RegisterFormSecondPage = props => {
 						validate={[required, nonEmpty, matchesPassword]}
 						autocomplete="off"
 					/>
-				</label>
+				<div className="form-field form-btns">
+					<button
+						type="button"
+						className="previous"
+						title="previous"
+						onClick={previousPage}
+					>
+						Previous
+					</button>
+					<button
+						className="form-submit-btn next"
+						type="submit"
+						title="Submit registration"
+					>
+						Submit
+					</button>
+					{error}
+				</div>
 			</fieldset>
-			<button
-				type="button"
-				className="previous"
-				title="previous"
-				onClick={previousPage}
-			>
-        Previous
-			</button>
-			<button
-				className="form-submit-btn next"
-				type="submit"
-				title="Submit registration"
-				disabled={pristine || submitting}
-			>
-        Submit
-			</button>
+
 		</form>
 	);
 };

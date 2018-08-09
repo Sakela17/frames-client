@@ -11,12 +11,22 @@ import './styles/landing-page.css';
 
 export class LandingPage extends React.Component {
 	render() {
+		let loader;
+		if (this.props.loading){
+			loader = (
+				<div className="loader-wrapper">
+					<div className="loader">Loading...</div>
+				</div>
+			);
+		}
+
 		if (this.props.loggedIn) {
 			return <Redirect to="/dashboard" />;
 		}
 
 		return (
 			<div className="landing-page">
+				{loader}
 				<section className="hero-section">
 					<div className="hero-section-text-wrapper">
 						<h1>Employee shift management made easy</h1>
@@ -36,7 +46,8 @@ export class LandingPage extends React.Component {
 
 const mapStateToProps = state => {
 	return {
-		loggedIn: state.auth.user !== null
+		loggedIn: state.auth.user !== null,
+		loading: state.auth.loading
 	};
 };
 

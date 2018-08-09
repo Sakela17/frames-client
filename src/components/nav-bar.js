@@ -7,12 +7,13 @@ import PropTypes from 'prop-types';
 import {logout} from '../actions/auth';
 
 import './styles/nav-bar.css';
+import logo from '../images/logo.png';
 
 export class NavBar extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			isOpen: true,
+			// isOpen: true,
 			view: window.innerWidth
 		};
 	}
@@ -30,7 +31,7 @@ export class NavBar extends React.Component {
 		const wideScreenView = view >= 640;
 
 		let menu;
-		if(this.state.isOpen & this.props.loggedIn){
+		if(this.props.loggedIn){
 			menu = (
 				<nav className="navbar-links-wrapper">
 					<ul className="navbar-links">
@@ -69,8 +70,8 @@ export class NavBar extends React.Component {
 			<header className="navbar-wrapper" role="banner">
 				<div className="navbar">
           <div className="navbar-logo-wrapper">
-            <Link to="/" title="Home / Dashboard"><i className="fa fa-window-restore" aria-hidden="true" title="Home / Dashboard"></i></Link>
-            {!this.props.loggedIn && <h1>Frames</h1>}
+            <Link to="/" title="Home / Dashboard"><img src={logo} /></Link>
+						{!this.props.loggedIn && <Link to="/" title="Home / Dashboard"><h1>Frames</h1></Link>}
           </div>
           {menu}
 				</div>

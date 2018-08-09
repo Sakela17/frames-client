@@ -74,6 +74,7 @@
 
 .opt-btn:hover,
 .opt-btn:focus {
+	cursor: pointer;
 	text-shadow: 0 0 1px #8aff37,
 	0 0 10px rgba(64, 199, 57, 0.8);
 }

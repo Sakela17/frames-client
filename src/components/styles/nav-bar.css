@@ -13,37 +13,45 @@
     color: #edeef0;
     height: 50px;
     margin: 0 auto;
+    padding: 0 2.5%;
 }
 
 .navbar-logo-wrapper {
     display: flex;
     flex: 0 0 30%;
     align-items: center;
-    padding-left: 20px;
+    justify-content: center;
+    /*padding-left: 20px;*/
+}
+
+.navbar-logo-wrapper h1,
+.navbar-logo-wrapper a {
+    /*padding-top: 2%;*/
+    /*padding-bottom: 2%;*/
+    /*font-size: 35px;*/
+    font-size: calc(1.2rem + .9vw);
+    line-height: calc(1.2rem + .9vw);
 }
 
 .navbar-logo-wrapper a {
-    padding-top: 2%;
-    padding-bottom: 2%;
-    font-size: 35px;
+    text-decoration: none;
+    color: #edeef0;
+
 }
 
-.navbar-logo-wrapper:hover,
-.navbar-logo-wrapper:focus {
-    color: #03A9F4;
-    text-shadow: 0 0 1px #03A9F4,
-                 0 0 10px rgb(3, 169, 244, 0.8)
+.navbar-logo-wrapper img {
+    margin-top: 5%;
+    padding: 5%;
+    max-height: 50px;
 }
 
 .navbar-logo-wrapper h1 {
     margin: 0;
-    padding-left: 20px;
-    font-size: calc(1.2rem + .9vw);
-    font-style: italic;
+
 }
 
 .fa-window-restore {
-    color: #03A9F4;
+    color: #edeef0;
 }
 
 nav a,
@@ -57,6 +65,7 @@ nav a:hover,
 nav a:focus,
 .navbar-signout-btn:hover,
 .navbar-signout-btn:focus {
+    cursor: pointer;
     text-decoration: none;
     color: #03A9F4;
     text-shadow: 0 0 1px #03A9F4,

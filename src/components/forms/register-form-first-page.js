@@ -18,7 +18,7 @@ export const RegisterFormFirstPage = props => {
 						component={renderField}
 						validate={[required, nonEmpty, isTrimmed]}
 						autocomplete="off"
-						placeholder='myusername'
+						placeholder="username"
 					/>
 					<Field
 						name="companyName"
@@ -27,7 +27,7 @@ export const RegisterFormFirstPage = props => {
 						component={renderField}
 						validate={[required, nonEmpty, isTrimmed]}
 						autocomplete="off"
-						placeholder='My Company Name'
+						placeholder="company name"
 					/>
 					<Field
 						name="phoneNumber"

@@ -4,7 +4,7 @@ import './styles/footer.css';
 export default function Footer() {
 	return (
 		<footer role="contentinfo" className="footer-style">
-			<p>Made with love by the MERNtalists™</p>
+			<p>Made by the MERNtalists™</p>
 			<ul>
         <li>
           <a href="https://github.com/mdargitz" title="Marina Dargitz Github">Marina Dargitz</a>
@@ -23,7 +23,7 @@ export default function Footer() {
         </li>
 
 				<li>
-					<a href="https://github.com/Sakela17" title="Marina Valiquette Github">Marina Valiquette</a>
+					<a href="https://github.com/valsakel" title="Marina Valiquette Github">Marina Valiquette</a>
 					<img
 						src='https://cdn.iconscout.com/public/images/icon/free/png-128/github-logo-brand-development-tools-318f14f5797bb6cc-128x128.png'
 						alt='Github logo'

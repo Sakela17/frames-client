@@ -51,7 +51,6 @@ export class LoginForm extends React.Component {
 							<button
 								className="form-submit-btn"
 								title="login submit button"
-								disabled={this.props.pristine || this.props.submitting}
             	>
              		Log in
             	</button>
@@ -78,6 +77,7 @@ LoginForm = reduxForm({
 export default LoginForm = connect(state => {
 	return {
 		loggedIn: state.auth.user !== null,
+		loading: state.auth.loading,
 		user: state.auth.user
 	};
 })(LoginForm);
