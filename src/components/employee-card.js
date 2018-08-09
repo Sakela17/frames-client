@@ -48,7 +48,9 @@ export function EmployeeCard (props){
 						<img
 							className="contain"
 							src={props.img ? props.img : placeholderImg}
-							alt={props.img ? props.name : "placeholder image"}/></div>
+							alt={props.img ? props.name : `placeholder image for ${props.name}`}
+						/>
+					</div>
 					<div className="employee-data">
             <p>{props.name}</p>
 						<p>{props.email}</p>
