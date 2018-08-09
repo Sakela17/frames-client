@@ -62,19 +62,19 @@ export const RegisterFormSecondPage = props => {
 					/>
 				<div className="form-field form-btns">
 					<button
+						className="form-submit-btn next"
+						type="submit"
+						title="Submit registration"
+					>
+						Submit
+					</button>
+					<button
 						type="button"
 						className="previous"
 						title="previous"
 						onClick={previousPage}
 					>
 						Previous
-					</button>
-					<button
-						className="form-submit-btn next"
-						type="submit"
-						title="Submit registration"
-					>
-						Submit
 					</button>
 					{error}
 				</div>

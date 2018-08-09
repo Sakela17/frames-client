@@ -1,9 +1,9 @@
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect}  from 'react-redux';
 import moment from 'moment';
 
-import {getThisMonth,getThisWeek,getToday} from '../actions/utils';
-import {setFramesView,fetchFrames} from '../actions/frames';
+import {getThisMonth, getThisWeek, getToday} from '../actions/utils';
+import {setFramesView, fetchFrames} from '../actions/frames';
 
 import './styles/schedule-view.css';
 
@@ -43,7 +43,8 @@ export class ScheduleView extends React.Component {
 			<div className="view-filter">
 				<h3>{startSchedule} - {endSchedule}</h3>
 				<div className="view-filter-btns">
-					<button className={this.props.view === 'daily' ? 'active view-btn' : 'view-btn'} title="Daily Schedule"
+					<button
+						className={this.props.view === 'daily' ? 'active view-btn' : 'view-btn'} title="Daily Schedule"
 						onClick={() => this.handleDaily()}
 					>
             Daily

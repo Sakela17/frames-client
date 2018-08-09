@@ -95,16 +95,8 @@
     text-align: center;
 }
 
-/* .employee-availability table {
-    margin: 0 auto;
-} */
-
-.employee-section-details:last-child {
+.employee-card:last-child {
     border-bottom: none;
-}
-
-.employee-profile-info div:last-child {
-
 }
 
 .employee-profile-info p {

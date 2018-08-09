@@ -82,17 +82,16 @@ export class CreateFrameForm extends React.Component {
 						onClick={() => this.handleCancel()}>
 					</button>
 					<div className="form-wrapper">
-						<h2 className='form-header'>Add Frame</h2>
+						<h2 className='form-header'>Create Frame</h2>
 						<form onSubmit={e => this.handleSubmit(e)}>
 							<fieldset>
 								<legend>Add Frame</legend>
 								<div className="form-field">
-									<label htmlFor='employee-select'>Employee
-
-									</label>
+									<label htmlFor='employee-select'>Employee</label>
 									<select
 										id="employee-select"
 										name="employee-select"
+										autoFocus
 									>
 										{this.props.employees.map((employee, i) =>
 											<option key={i} value={employee.id}>
@@ -124,8 +123,8 @@ export class CreateFrameForm extends React.Component {
 									/>
 								</div>
 								<div className="form-field form-btns">
-									<button className="form-reset-btn" type="button" onClick={() => this.handleCancel()}>Cancel</button>
 									<button className="form-submit-btn" type="submit">Save</button>
+									<button className="form-reset-btn" type="button" onClick={() => this.handleCancel()}>Cancel</button>
 								</div>
 								{error}
 							</fieldset>

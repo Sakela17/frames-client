@@ -56,7 +56,6 @@ export class EditEmployeeForm extends React.Component {
 
 		return (
 			<React.Fragment>
-				<button className="modal-close-btn" title="Close edit employee menu" onClick={() => this.handleCancel()}></button>
 				<div className="modal-form-wrapper">
 					<button
 						className="modal-close-btn"
@@ -75,6 +74,7 @@ export class EditEmployeeForm extends React.Component {
 											id='firstname'
 											name='firstname'
 											defaultValue={this.props.employee.firstname}
+											autoFocus
 										/>
 									</label>
 								</div>
@@ -137,16 +137,17 @@ export class EditEmployeeForm extends React.Component {
 									</label>
 								</div>
 								<div className="form-field form-btns">
-									<button className="form-delete-btn" title="Delete employee button" type='button' onClick={() => this.handleDelete()}>
-										<i className="fa fa-trash-o" aria-hidden="true"></i>
-									</button>
-									<button onClick={() => this.props.dispatch(clearEmployeeError())} className="form-reset-btn" type="reset">Reset</button>
 									<button
 										className="form-submit-btn"
 										title="Edit employee form submit button"
 										type="submit"
-										disabled={this.props.error}
-									>Save</button>
+										disabled={this.props.error}>
+										Save
+									</button>
+									<button className="form-delete-btn" title="Delete employee button" type='button' onClick={() => this.handleDelete()}>
+										<i className="fa fa-trash-o" aria-hidden="true"></i>
+									</button>
+									<button onClick={() => this.props.dispatch(clearEmployeeError())} className="form-reset-btn" type="reset">Reset</button>
 								</div>
 								{error}
 							</fieldset>

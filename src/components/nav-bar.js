@@ -70,7 +70,7 @@ export class NavBar extends React.Component {
 			<header className="navbar-wrapper" role="banner">
 				<div className="navbar">
           <div className="navbar-logo-wrapper">
-            <Link to="/" title="Home / Dashboard"><img src={logo} /></Link>
+            <Link to="/" title="Home / Dashboard"><img src={logo} alt="frames logo icon"/></Link>
 						{!this.props.loggedIn && <Link to="/" title="Home / Dashboard"><h1>Frames</h1></Link>}
           </div>
           {menu}

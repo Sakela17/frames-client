@@ -91,6 +91,7 @@ export class SuperFilter extends React.Component{
 										<select
 											id="employee-select"
 											name="employee-select"
+											autoFocus
 										>
 											<option value=''>FILTER BY EMPLOYEE</option>
 											{this.props.employees.map((employee, i) =>
@@ -141,13 +142,13 @@ export class SuperFilter extends React.Component{
 									/>
 								</div>
 								<div className="form-field form-btns">
-									<button className="form-reset-btn" type="button" onClick={() => this.handleCancel()}>Cancel</button>
 									<button
 										className="form-submit-btn"
 										type="submit"
-                    disabled={this.state.frameError}>
+										disabled={this.state.frameError}>
 										Submit
 									</button>
+									<button className="form-reset-btn" type="button" onClick={() => this.handleCancel()}>Cancel</button>
 								</div>
 								{error}
 							</fieldset>

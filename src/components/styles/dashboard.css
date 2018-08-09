@@ -58,7 +58,7 @@
   padding: 5px 10px;
   margin-right: 10px;
   border: none;
-  color: #35df5c;
+  color: white;
   text-transform: uppercase;
   font-size: 20px;
   -webkit-transition-property: background,color;
@@ -74,8 +74,8 @@
 .super-filter-btn:focus,
 .super-filter-btn:focus {
     cursor: pointer;
-    text-shadow: 0 0 1px #8aff37,
-                 0 0 10px rgba(64, 199, 57, 0.8);
+    color: #28bb49;
+    text-shadow: 0 0 10px rgba(64, 199, 57, 0.8);
 }
 
 .frame-add-btn {

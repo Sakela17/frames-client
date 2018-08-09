@@ -11,6 +11,7 @@
     -webkit-background-size: 3px 3px;
     -moz-background-size: 3px 3px;
     background-size: 3px 3px;
+    min-height: 100vh;
 }
 
 .App {

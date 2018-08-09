@@ -98,6 +98,7 @@ export class CreateEmployeeForm extends React.Component {
 											type='text'
 											id='firstname'
 											name='firstname'
+											autoFocus
 											required
 										/>
 									</label>
@@ -142,7 +143,6 @@ export class CreateEmployeeForm extends React.Component {
 										/>
 									</label>
 								</div>
-
 								<div className="form-field">
 									<EmployeeAvailability availability={defaultAvailability} type='create'/>
 								</div>
@@ -157,8 +157,8 @@ export class CreateEmployeeForm extends React.Component {
 									</label>
 								</div>
 								<div className="form-field form-btns">
-									<button className="form-reset-btn" type="button" onClick={() => this.handleCancel()}>Cancel</button>
 									<button className="form-submit-btn" type='submit'>Save</button>
+									<button className="form-reset-btn" type="button" onClick={() => this.handleCancel()}>Cancel</button>
 								</div>
 								{error}
 							</fieldset>

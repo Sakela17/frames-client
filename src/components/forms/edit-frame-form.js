@@ -108,6 +108,7 @@ export class EditFrameForm extends React.Component {
 								name="employee-select"
 								defaultValue={this.state.employee}
 								onChange={this.handleEmployeeSelect}
+								autoFocus
 							>
 								{this.props.employees.employees.map((employee, i) =>
 										<option key={i} value={employee.id}>
@@ -141,6 +142,13 @@ export class EditFrameForm extends React.Component {
 						</div>
 						<div className="form-field form-btns">
 							<button
+								className="form-submit-btn"
+								title="Submit Edited Frame"
+								type="submit"
+								disabled={this.state.error || this.props.error}>
+								Save
+							</button>
+							<button
 								className="form-delete-btn"
 								title="Delete frame"
 								type="button"
@@ -153,13 +161,6 @@ export class EditFrameForm extends React.Component {
 								title="Reset frame form"
 								onClick={this.handleReset}>
 								Reset
-							</button>
-							<button
-								className="form-submit-btn"
-								title="Submit Edited Frame"
-								type="submit"
-								disabled={this.state.error || this.props.error}>
-								Save
 							</button>
 						</div>
 					{error}
