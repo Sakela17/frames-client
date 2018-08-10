@@ -26,8 +26,8 @@ export const Card = (props) => {
 				<div className="card-img">
 					<img
 						className="contain"
-						src={employeeId.img ? employeeId.img : placeholderImg }
-						alt={employeeId.img ? emplName : `placeholder image for ${emplName}`}
+						src={(employeeId && employeeId.img) ? employeeId.img : placeholderImg }
+						alt={(employeeId && employeeId.img) ? emplName : `placeholder image for ${emplName}`}
 					/>
 				</div>
 				<div className="card-employee">
