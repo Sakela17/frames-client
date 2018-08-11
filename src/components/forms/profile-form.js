@@ -95,7 +95,7 @@ export class ProfileForm extends React.Component {
 							autocomplete="off"
 						/>
 						<div className="form-field form-btns">
-							<button className="form-submit-btn	" type="submit">Save</button>
+							<button className="form-submit-btn" type="submit">Save</button>
 							<button className="form-reset-btn" type="button" onClick={this.props.setEdit}>Cancel</button>
               {error}
 						</div>

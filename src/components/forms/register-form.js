@@ -51,7 +51,7 @@ export class RegisterForm extends React.Component {
 
     return (
       <div className="login-form-wrapper register-form-wrapper">
-        <h2 className="form-header">Register Company</h2>
+        <h2 className="form-header">Register</h2>
         {page === 1 &&
         <RegisterFormFirstPage
           onSubmit={this.nextPage} />}
