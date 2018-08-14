@@ -15,7 +15,7 @@ username: **username**
 password: **password**
 
 ## Screenshots
-<img src="src/images/frames_schreenshots.png" alt="app log" width="100%">
+<img src="src/images/frames_screenshots.png" alt="app log" width="100%">
 
 ## Motivation
 This project was built in 3 weeks with 3 other fellow students from the Engineering Immersion program at 
