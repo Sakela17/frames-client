@@ -8,14 +8,14 @@ weekly or monthly views.
 
 Live app can be viewed [here](https://frames-app.surge.sh).
 
-Check out the server repo [here](https://github.com/valsakel/frames-server).
+Check out API documentation [here](https://github.com/valsakel/frames-server).
 
 **Demo account for testing:**  
 username: **username**  
 password: **password**
 
 ## Screenshots
-<img src="src/images/frames_screenshots.png" alt="app log" width="100%">
+<img src="src/images/frames_screenshots.png" alt="app log" width="60%">
 
 ## Motivation
 This project was built in 3 weeks with 3 other fellow students from the Engineering Immersion program at 
